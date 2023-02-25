@@ -1,0 +1,29 @@
+.button {
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	background: #3B3F4A;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	color: white;
+
+	&:hover {
+		background-color: #18182e;
+	}
+	
+	&:active {
+		background-color: #050805;
+	}
+}
+
+.prevButton {
+	@extend .button;
+	margin-right: 26px;
+}
+
+.nextButton {
+	@extend .button;
+	margin-left: 26px;
+}
