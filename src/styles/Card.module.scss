@@ -1,0 +1,48 @@
+.thumbnailContainer {
+  position: relative;
+  width: 108px;
+  height: 72px;
+  filter: drop-shadow(0px 0px 30px #1f2127);
+
+  @media only screen and (max-width: 375px) {
+    height: 70px;
+    width: 50px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:not(:last-of-type) {
+    margin-right: 5px;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+  }
+
+  + .thumbnailContainer {
+    margin-left: 13px;
+    @media (max-width: 432px) {
+      margin-left: 8px;
+    }
+  }
+}
+
+.activeIndicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  display: auto;
+  border: 2px solid #ffffff;
+  filter: drop-shadow(0px 0px 30px rgba(219, 219, 219, 0.24));
+  border-radius: 20px;
+  box-sizing: border-box;
+}

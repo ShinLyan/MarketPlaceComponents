@@ -1,92 +1,35 @@
 body {
-  background-color: #1F2127;
+  background-color: #1f2127;
 }
 
 .imageCarousel {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 612px;
-	height: 100px;
-	background-color: #1F2127;
-	flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 612px;
+  height: 100px;
+  background-color: #1f2127;
+  flex-direction: row;
 }
 
 .sliderWrapper {
-	width: 500px; // рассчитать значение для 4 карточек + 3 отступа
-	overflow: hidden;
-	display: flex;
-	
-	@media (max-width: 432px){
-		width: 100%;
-	}
+  width: 500px; // рассчитать значение для 4 карточек + 3 отступа
+  overflow: hidden;
+  display: flex;
+
+  @media (max-width: 432px) {
+    width: 100%;
+  }
 }
 
 .thumbnails {
   display: flex;
   justify-content: center;
-  
-  .thumbnailContainer {
-    position: relative;
-    width: 108px;
-		height: 72px;
-		filter: drop-shadow(0px 0px 30px #1F2127);
-
-    @media only screen and (max-width: 375px) {
-      height: 70px;
-      width: 50px;
-    }
-
-    &:hover {
-      cursor: pointer;
-    }
-
-    &:not(:last-of-type) {
-      margin-right: 5px;
-    }
-
-    img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      object-position: center;
-			border-radius: 20px;
-    }
-
-    .activeIndicator {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      pointer-events: none;
-			display: none;
-      //transform: scaleX(0);
-			border: 2px solid #FFFFFF;
-			filter: drop-shadow(0px 0px 30px rgba(219, 219, 219, 0.24));
-			border-radius: 20px;
-			box-sizing: border-box;
-
-      &.active {
-        //transform: scaleX(1);
-				display: auto;
-      }
-    }
-
-		
-		+.thumbnailContainer {
-			margin-left: 13px;
-			@media(max-width: 432px) {
-				margin-left: 8px;
-			}
-		}
-  }
-
 }

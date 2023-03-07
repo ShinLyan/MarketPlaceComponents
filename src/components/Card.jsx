@@ -1,12 +1,11 @@
-import styles from "../styles/ImageCarousel.module.scss";
+import styles from "../styles/Card.module.scss";
 
-const Card = (id, src, onClick, currentImage) => {
+const Card = ({ id, src, onClick, currentImage }) => {
   return (
     <div onClick={onClick} className={styles.thumbnailContainer}>
       <img src={src} alt={id} />
-      {/* <div
-      //className={`activeIndicator ${id === currentImage ? "active" : null}`}
-      /> */}
+
+      <div className={id === currentImage ? styles.activeIndicator : null} />
     </div>
   );
 };
