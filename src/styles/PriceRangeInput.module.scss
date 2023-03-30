@@ -1,0 +1,35 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  margin: 40px; //40px 0;
+  gap: 24px;
+
+  width: 212px;
+  height: 119px;
+
+  p {
+    width: 51px;
+    height: 24px;
+    margin: 0;
+
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #ffffff;
+  }
+}
+
+.label_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  width: 212px;
+  height: 35px;
+}

@@ -25,7 +25,7 @@ const CarouselControlButton = function ({ type, x, setX, maxX }) {
       className={type === "prev" ? styles.prevButton : styles.nextButton}
       onClick={onClick}
     >
-      <img src={type === "prev" ? prev : next} />
+      <img src={type === "prev" ? prev : next} alt="button" />
     </button>
   );
 };

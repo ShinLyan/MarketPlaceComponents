@@ -1,0 +1,11 @@
+@import "variables";
+
+.input {
+  background-color: $input-bg;
+  border-radius: 50vh;
+  padding: 10px;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  color: #1f2127;
+}

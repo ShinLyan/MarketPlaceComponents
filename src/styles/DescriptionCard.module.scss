@@ -1,0 +1,31 @@
+.description_card {
+  position: relative;
+  width: 648px;
+  height: 351px;
+  border-radius: 40px;
+  box-shadow: 0px 0px 30px #1f2127;
+
+  background: url("../images/descriptionCard.png");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.button_wrapper {
+  background: #3b3f4a;
+  box-shadow: 0px 0px 30px #1f2127;
+  border-radius: 40px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 60px;
+  height: 60px;
+  border: none;
+}

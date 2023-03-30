@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 60px;
+
+  width: 1320px;
+
+  // delete
+  margin-top: 50px;
+  margin-bottom: 250px;
+}
